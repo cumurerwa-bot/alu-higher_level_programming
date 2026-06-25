@@ -1,4 +1,12 @@
+
 #!/usr/bin/python3
-for i in range(97, 123):
-    if i != 101 and i != 113:
-        print("{}".format(chr(i)), end="")
+import random
+number = random.randint(-10, 10)
+if number > 0:
+    print(f"{number} is positive")
+elif number == 0:
+    print(f"{number} is zero")
+else:
+    print(f"{number} is negative")
+
+

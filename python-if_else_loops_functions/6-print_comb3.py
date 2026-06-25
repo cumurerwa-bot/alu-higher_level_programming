@@ -1,5 +1,16 @@
+
+
+
+
+
 #!/usr/bin/python3
-str1 = "Holberton"
-str2 = "School"
-str1 = str1 + " " + str2
-print(f"Welcome to {str1}!")
+for i in range(100):
+    if i < 99:
+        print("{:02d}".format(i), end=", ")
+    else:
+        print("{:02d}".format(i))
+
+
+
+
+

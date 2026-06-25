@@ -1,4 +1,9 @@
 #!/usr/bin/python3
-str = "Holberton School"
-print(str * 3)
-print(str[:9])
+for i in range(100):
+    if i < 99:
+        print("{:02d}".format(i), end=", ")
+    else:
+        print("{:02d}".format(i))
+
+
+
