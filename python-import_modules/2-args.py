@@ -1,26 +1,15 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    from calculator_1 import add, sub, mul, div
 
-    if len(sys.argv) != 4:
-        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        sys.exit(1)
+    count = len(sys.argv) - 1
 
-    a = int(sys.argv[1])
-    operator = sys.argv[2]
-    b = int(sys.argv[3])
-
-    if operator == '+':
-        res = add(a, b)
-    elif operator == '-':
-        res = sub(a, b)
-    elif operator == '*':
-        res = mul(a, b)
-    elif operator == '/':
-        res = div(a, b)
+    if count == 0:
+        print("0 arguments.")
+    elif count == 1:
+        print("1 argument:")
     else:
-        print("Unknown operator. Available operators: +, -, * and /")
-        sys.exit(1)
+        print("{} arguments:".format(count))
 
-    print("{} {} {} = {}".format(a, operator, b, res))
+    for i in range(1, count + 1):
+        print("{}: {}".format(i, sys.argv[i]))
